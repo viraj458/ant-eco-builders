@@ -1,0 +1,8 @@
+/* carouselStyles.css */
+.mantine-Carousel-indicator {
+    background-color: var(--indicator-bg, #4a5568); /* Default color */
+}
+
+.mantine-Carousel-indicator[data-active="true"] {
+    background-color: var(--indicator-active-bg, #2b6cb0); /* Active color */
+}

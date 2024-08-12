@@ -12,11 +12,11 @@ function Footer() {
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
                         <ul className="text-sm space-y-2">
-                            <li><a href="#home" className="hover:underline">Home</a></li>
-                            <li><a href="#about" className="hover:underline">About Us</a></li>
-                            <li><a href="#services" className="hover:underline">Services</a></li>
-                            <li><a href="#products" className="hover:underline">Products</a></li>
-                            <li><a href="#contact" className="hover:underline">Contact</a></li>
+                            <li><a href="/" className="hover:underline">Home</a></li>
+                            <li><a href="/about" className="hover:underline">About Us</a></li>
+                            <li><a href="/services" className="hover:underline">Services</a></li>
+                            <li><a href="/products" className="hover:underline">Products</a></li>
+                            <li><a href="/contact" className="hover:underline">Contact</a></li>
                         </ul>
                     </div>
                     <div>

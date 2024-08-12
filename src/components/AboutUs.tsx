@@ -9,12 +9,12 @@ const AboutUs: React.FC = () => {
 
   return (
     <div className="space-y-6 max-w-[1600px] mx-auto">
-      <div className="bg-gray-300 h-96 flex items-center justify-center border-2 border-blue-500">
-        <img src="/src/assets/image1.jpg" alt="Banner" className="w-full h-full object-cover" />
+      <div className="bg-gray-300 h-96 flex items-center justify-center">
+        <img src="/src/assets/image1.png" alt="Banner" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
         <div className="bg-gray-300 w-full lg:w-1/3 flex items-center justify-center">
-          <img src="/src/assets/image2.jpg" alt="Image 2" className="w-full h-full object-cover" />
+          <img src="/src/assets/image2.png" alt="Image 2" className="w-full h-full object-cover" />
         </div>
         <div className="flex-1 flex flex-col space-y-6">
           <div className="p-4 space-y-2">

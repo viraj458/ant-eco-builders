@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -63,10 +66,28 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full px-4 mb-28">
+    <div className="flex flex-col items-center justify-center w-full px-4">
       <div className="container max-w-[1600px] mx-auto">
-        <div className="bg-gray-300 mt-8 p-8 text-center w-full h-40 flex items-center justify-center">
-          <h1 className="text-4xl font-bold">Contact Us</h1>
+        <div className="bg-gray-300 p-7 text-center w-full flex flex-col items-center justify-center rounded-xl">
+          <h1 className="text-4xl font-bold py-4">Contact Us</h1>
+
+          <div className="flex flex-col space-y-2 ">
+            <span className="flex items-center space-x-10 justify-between">
+              <p><FaPhoneAlt/></p>
+              <p className="w-full">(+123) 456-7890</p>
+            </span>
+
+            <span className="flex justify-between items-center space-x-10">
+              <p><MdEmail/></p>
+              <p className="w-full">info@eco-builders.com</p>
+            </span>
+
+            <span className="flex justify-between items-center space-x-10">
+              <p><FaLocationDot/></p>
+              <p className="w-full">123 Eco St, Green City, GA</p>
+            </span>
+            
+          </div>
         </div>
 
         <div className="mt-8 text-center w-full h-20 flex items-center justify-center">

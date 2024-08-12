@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="flex-1 flex flex-col space-y-6">
           <div className="p-4 space-y-2">
-            <h2 className="font-bold text-lg">Who We Are</h2>
+            <h2 className="font-bold text-lg">Who We Ae</h2>
             <hr className="border-black" />
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ex vel cursus

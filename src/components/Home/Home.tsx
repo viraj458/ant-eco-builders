@@ -1,9 +1,11 @@
 import { Carousel } from "@mantine/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import "@mantine/carousel/styles.css";
 import { Image } from "@mantine/core";
 import Img01 from "/Image01.png";
 import Img02 from "/image 02.png";
 import Img03 from "/Image03.png";
+import { useRef } from "react";
 
 const images = [
   "/img/img01.png",
@@ -46,12 +48,10 @@ const images = [
 // ];
 
 function Home() {
+  const autoplay = useRef(Autoplay({ delay: 2000 }));
   const slides = images.map((url) => (
     <Carousel.Slide key={url}>
-      <Image
-        src={url}
-        className="object-cover w-full h-full rounded-md border border-black"
-      />
+      <Image src={url} className="object-cover w-full h-full rounded-md" />
     </Carousel.Slide>
   ));
 
@@ -59,6 +59,10 @@ function Home() {
     <div className="max-w-[1600px] mx-auto">
       <Carousel
         withIndicators
+        plugins={[autoplay.current]}
+        onMouseEnter={autoplay.current.stop}
+        onMouseLeave={autoplay.current.reset}
+        loop
         styles={{
           indicator: {
             backgroundColor: "#000",
@@ -208,10 +212,19 @@ function Home() {
               </h3>
               <span className="flex flex-col">
                 <p className="text-sm mb-4 flex text-justify">
-                The UK is currently experiencing a significant shortage of essential construction materials such as bricks, steel, adhesives, paints, and timber. While larger construction companies have managed to navigate these challenges, smaller businesses are struggling to keep up.
+                  The UK is currently experiencing a significant shortage of
+                  essential construction materials such as bricks, steel,
+                  adhesives, paints, and timber. While larger construction
+                  companies have managed to navigate these challenges, smaller
+                  businesses are struggling to keep up.
                 </p>
                 <p className="text-sm mb-4 flex text-justify">
-                Despite the recent trade deal between the UK and the EU, which addresses some issues, it fails to tackle one of the most pressing concerns for construction companies: the new UK Conformity Assessed (UKCA) certification. As of January 1, 2022, all European products used in UK construction must be UKCA certified.
+                  Despite the recent trade deal between the UK and the EU, which
+                  addresses some issues, it fails to tackle one of the most
+                  pressing concerns for construction companies: the new UK
+                  Conformity Assessed (UKCA) certification. As of January 1,
+                  2022, all European products used in UK construction must be
+                  UKCA certified.
                 </p>
               </span>
               <div className="flex justify-between items-center">
@@ -248,13 +261,25 @@ function Home() {
               </div>
             </div>
             <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">Navigating the Building Material Shortage: Challenges and Insights</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Navigating the Building Material Shortage: Challenges and
+                Insights
+              </h3>
               <span className="flex flex-col">
                 <p className="text-sm mb-4 flex text-justify">
-                The construction industry is facing a significant challenge as a major shortage of building materials is causing delays and budget concerns across the board. For many, this has become a serious obstacle, especially for those working within tight timelines and budgets.
+                  The construction industry is facing a significant challenge as
+                  a major shortage of building materials is causing delays and
+                  budget concerns across the board. For many, this has become a
+                  serious obstacle, especially for those working within tight
+                  timelines and budgets.
                 </p>
                 <p className="text-sm mb-4 flex text-justify">
-                The shortage has had a direct impact on the availability and cost of materials such as bricks. The Construction Products Association (CPA) predicted a rise in construction output by 12.9% this year and 5.2% next year. However, these optimistic forecasts are now under threat as the demand for materials far exceeds supply.
+                  The shortage has had a direct impact on the availability and
+                  cost of materials such as bricks. The Construction Products
+                  Association (CPA) predicted a rise in construction output by
+                  12.9% this year and 5.2% next year. However, these optimistic
+                  forecasts are now under threat as the demand for materials far
+                  exceeds supply.
                 </p>
               </span>
               <div className="flex justify-between items-center">

@@ -27,6 +27,14 @@ const ServicesPage: React.FC = () => {
   };
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      handleNextSlide();
+    }, 2000); // Automatically change slide every 2 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [currentSlide]); // Dependency array ensures the interval is reset on slide change
+
+  useEffect(() => {
     const renderChart = (canvasId: string) => {
       const ctx = (
         document.getElementById(canvasId) as HTMLCanvasElement
@@ -68,8 +76,16 @@ const ServicesPage: React.FC = () => {
           <img
             src={slides[currentSlide]}
             alt={`Slide ${currentSlide + 1}`}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full transition-opacity duration-1000 ease-in-out"
+            style={{ opacity: 1 }}
           />
+           <span className="absolute">
+         <div className="flex flex-col justify-center items-center">
+         <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">service for our aac</p> 
+         <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">blocks</p>
+         <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">Make your way easier</p>
+         </div>
+        </span>
           <button
             onClick={handlePrevSlide}
             className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full flex items-center justify-center"
@@ -108,6 +124,7 @@ const ServicesPage: React.FC = () => {
               />
             </svg>
           </button>
+          
         </div>
         <div className="flex justify-center mt-4">
           {slides.map((_, index) => (

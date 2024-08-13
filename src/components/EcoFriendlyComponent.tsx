@@ -14,8 +14,15 @@ const EcoFriendlyComponent: React.FC = () => {
 
   return (
     <div className="bg-gray-100 max-w-[1600px] mx-auto">
-      <div className="bg-green-500 h-auto flex items-center justify-center mb-4">
+      <div className="bg-green-500 h-[150px] sm:h-auto flex items-center justify-center mb-4">
         <img src={PImage1} alt="Eco-friendly shows in green theme" className="h-full w-full" />
+        <span className="absolute">
+         <div className="flex flex-col justify-center items-center">
+         <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">the world's best aac</p> 
+         <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">blocks</p>
+         <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">Bring your home closer to nature</p>
+         </div>
+        </span>
       </div>
       <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 bg-gray-200 mb-4 p-4 flex items-center justify-center">
@@ -91,7 +98,7 @@ const EcoFriendlyComponent: React.FC = () => {
       </div>
       <div className="mt-4">
         <h3 className="text-lg font-bold mb-2 text-center">
-        Item comparison withANT AAC Block
+        Item comparison with ANT AAC Block
         </h3>
         <div className="border-t border-dashed border-gray-400 pt-2">
           {data && data.length > 0 ? (

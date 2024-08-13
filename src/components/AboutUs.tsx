@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Image2 from "/src/assets/image2.png";
 
 const AboutUs: React.FC = () => {
-  const [clickedIndex, setClickedIndex] = useState<number | null>(null);
+  // const [clickedIndex, setClickedIndex] = useState<number | null>(null);
 
-  const handleValueClick = (index: number) => {
-    setClickedIndex(index);
-  };
+  // const handleValueClick = (index: number) => {
+  //   setClickedIndex(index);
+  // };
 
   return (
     <div className="space-y-6 max-w-[1600px] mx-auto">
@@ -158,10 +158,10 @@ const AboutUs: React.FC = () => {
         description:
           "We are committed to continuous improvement, striving for excellence in all aspects of our business.",
       },
-    ].map((item, index) => (
+    ].map((item) => (
       <div
         key={item.value}
-        onClick={() => handleValueClick(index)}
+        // onClick={() => handleValueClick(index)}
         className={`h-28 sm:h-32 flex items-center justify-center text-center text-sm font-bold p-2 border bg-gray-300 cursor-pointer relative flip-box`}
       >
         <div className="flip-box-inner h-full w-full">

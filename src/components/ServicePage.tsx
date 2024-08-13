@@ -6,10 +6,10 @@ Chart.register(...registerables);
 const ServicesPage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    "/img/img05.png",
-    "/img/img06.png",
-    "/img/img07.png",
-    "/img/img08.png",
+    "/4.jpg",
+    "/5.jpg",
+    "/6.jpg",
+    "/7.jpg",
   ];
 
   const handleNextSlide = () => {
@@ -124,7 +124,7 @@ const ServicesPage: React.FC = () => {
       <div className="flex flex-col lg:flex-row gap-8 mb-8">
         <div className="bg-gray-300 flex-none h-48 lg:h-auto lg:w-1/3">
           <img
-            src="/src/assets/image5.png"
+            src="/aboutImg01.jpg"
             alt="Delivery"
             className="object-cover w-full h-full"
           />
@@ -145,7 +145,7 @@ const ServicesPage: React.FC = () => {
       <div className="flex flex-col lg:flex-row-reverse gap-8 mb-8">
         <div className="bg-gray-300 flex-none h-48 lg:h-auto lg:w-1/3">
           <img
-            src="/src/assets/image6.jpg"
+            src="/1.jpg"
             alt="Packing and Loading"
             className="object-cover w-full h-full"
           />

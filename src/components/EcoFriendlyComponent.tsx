@@ -12,11 +12,11 @@ const EcoFriendlyComponent: React.FC = () => {
   return (
     <div className="bg-gray-100 max-w-[1600px] mx-auto">
       <div className="bg-green-500 h-96 flex items-center justify-center mb-4">
-        <img src="/src/assets/image1.jpg" alt="Eco-friendly shows in green theme" className="h-full w-full object-cover" />
+        <img src="/src/assets/image3.png" alt="Eco-friendly shows in green theme" className="h-full w-full" />
       </div>
       <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/4 bg-gray-200 mb-4 p-4 flex items-center justify-center">
-          <img src="/src/assets/image2.jpg" alt="Image 2" className="h-full w-full object-cover" />
+          <img src="/src/assets/image4.png" alt="Image 2" className="h-full w-full object-cover" />
         </div>
         <div className="w-full lg:w-3/4 p-4">
           <div className="mb-4">

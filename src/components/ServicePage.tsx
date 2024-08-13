@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Chart, registerables } from 'chart.js';
+import React, { useState, useEffect } from "react";
+import { Chart, registerables } from "chart.js";
 
 Chart.register(...registerables);
 
 const ServicesPage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    '/src/assets/image1.jpg',
-    '/src/assets/image2.jpg',
-    '/src/assets/image3.jpg',
-    '/src/assets/image4.jpg',
+    "/img/img05.png",
+    "/img/img06.png",
+    "/img/img07.png",
+    "/img/img08.png",
   ];
 
   const handleNextSlide = () => {
@@ -28,18 +28,20 @@ const ServicesPage: React.FC = () => {
 
   useEffect(() => {
     const renderChart = (canvasId: string) => {
-      const ctx = (document.getElementById(canvasId) as HTMLCanvasElement)?.getContext('2d');
+      const ctx = (
+        document.getElementById(canvasId) as HTMLCanvasElement
+      )?.getContext("2d");
       if (ctx) {
         new Chart(ctx, {
-          type: 'bar',
+          type: "bar",
           data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+            labels: ["January", "February", "March", "April", "May", "June"],
             datasets: [
               {
-                label: 'Sales',
+                label: "Sales",
                 data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: "rgba(75, 192, 192, 0.2)",
+                borderColor: "rgba(75, 192, 192, 1)",
                 borderWidth: 1,
               },
             ],
@@ -55,14 +57,14 @@ const ServicesPage: React.FC = () => {
       }
     };
 
-    renderChart('chart1');
-    renderChart('chart2');
-  }, []); 
+    renderChart("chart1");
+    renderChart("chart2");
+  }, []);
 
   return (
     <div className="max-w-[1600px] mx-auto px-4">
       <div className="relative mb-8">
-        <div className="relative bg-gray-300 h-48 lg:h-96 mb-8 flex items-center justify-center">
+        <div className="relative bg-gray-300 h-48 lg:h-[500px] mb-8 flex items-center justify-center">
           <img
             src={slides[currentSlide]}
             alt={`Slide ${currentSlide + 1}`}
@@ -113,7 +115,7 @@ const ServicesPage: React.FC = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 mx-1 rounded-full ${
-                currentSlide === index ? 'bg-gray-800' : 'bg-gray-400'
+                currentSlide === index ? "bg-gray-800" : "bg-gray-400"
               }`}
             />
           ))}
@@ -122,7 +124,7 @@ const ServicesPage: React.FC = () => {
       <div className="flex flex-col lg:flex-row gap-8 mb-8">
         <div className="bg-gray-300 flex-none h-48 lg:h-auto lg:w-1/3">
           <img
-            src="/src/assets/image5.jpg"
+            src="/src/assets/image5.png"
             alt="Delivery"
             className="object-cover w-full h-full"
           />

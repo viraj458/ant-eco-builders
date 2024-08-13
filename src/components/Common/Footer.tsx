@@ -6,7 +6,7 @@ function Footer() {
                     <div>
                         <h3 className="text-xl font-semibold mb-4">About Us</h3>
                         <p className="text-sm">
-                            We are a company dedicated to providing the best eco-friendly building solutions. Our products are designed to help you build a sustainable future.
+                            We are a company dedicated to providing the best Eco-friendly building solutions. Our products are designed to help you build a sustainable future.
                         </p>
                     </div>
                     <div>

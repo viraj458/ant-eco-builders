@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import ContactPage from './components/ContactPage';
 import ServicesPage from './components/ServicePage';
 import EcoFriendlyComponent from './components/EcoFriendlyComponent';
+import LibraryPage from './LibraryPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/library" element={<LibraryPage />} />
             <Route path="/products" element={<EcoFriendlyComponent />} />
         </Routes>
       </main>

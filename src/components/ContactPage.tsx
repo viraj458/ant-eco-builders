@@ -79,12 +79,12 @@ const ContactPage: React.FC = () => {
 
             <span className="flex justify-between items-center space-x-10">
               <p><MdEmail/></p>
-              <p className="w-full">info@eco-builders.com</p>
+              <p className="w-full">info@antecobuilders.com</p>
             </span>
 
             <span className="flex justify-between items-center space-x-10">
               <p><FaLocationDot/></p>
-              <p className="w-full">123 Eco St, Green City, GA</p>
+              <p className="w-full">12 Lower Cambridge Street,Loughborough,LE11 1PH</p>
             </span>
             
           </div>
@@ -153,7 +153,7 @@ const ContactPage: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white py-3 px-6 w-full rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                  className="bg-black text-white py-3 px-6 w-full rounded-lg hover:bg-gray-500 transition-colors duration-300"
                 >
                   Submit
                 </button>

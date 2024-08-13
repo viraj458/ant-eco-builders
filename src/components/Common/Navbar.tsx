@@ -15,7 +15,7 @@ function Navbar() {
         setIsSidebarOpen(false);
     };
 
-    const isActive = (path : string) => location.pathname === path ? 'bg-blue-500 text-white' : 'hover:bg-gray-400';
+    const isActive = (path : string) => location.pathname === path ? 'bg-black text-white' : 'hover:bg-gray-400';
 
     return (
         <header className="bg-gray-300 text-black p-4">
@@ -38,6 +38,7 @@ function Navbar() {
                         <li><Link to="/about" className={`px-2 py-2 rounded transition duration-300 ${isActive('/about')}`}>About</Link></li>
                         <li><Link to="/products" className={`px-2 py-2 rounded transition duration-300 ${isActive('/products')}`}>Products</Link></li>
                         <li><Link to="/services" className={`px-2 py-2 rounded transition duration-300 ${isActive('/services')}`}>Services</Link></li>
+                        <li><Link to="/library" className={`px-2 py-2 rounded transition duration-300 ${isActive('/library')}`}>Library</Link></li>
                         <li><Link to="/contact" className={`px-2 py-2 rounded transition duration-300 ${isActive('/contact')}`}>Contact</Link></li>
                     </ul>
                 </nav>
@@ -48,6 +49,7 @@ function Navbar() {
                     <li><Link to="/about" className={`block px-2 py-2 rounded transition duration-300 ${isActive('/about')}`} onClick={closeSidebar}>About</Link></li>
                     <li><Link to="/products" className={`block px-2 py-2 rounded transition duration-300 ${isActive('/products')}`} onClick={closeSidebar}>Products</Link></li>
                     <li><Link to="/services" className={`block px-2 py-2 rounded transition duration-300 ${isActive('/services')}`} onClick={closeSidebar}>Services</Link></li>
+                    <li><Link to="/library" className={`block px-2 py-2 rounded transition duration-300 ${isActive('/library')}`} onClick={closeSidebar}>Library</Link></li>
                     <li><Link to="/contact" className={`block px-2 py-2 rounded transition duration-300 ${isActive('/contact')}`} onClick={closeSidebar}>Contact</Link></li>
                 </ul>
             </div>

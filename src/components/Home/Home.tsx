@@ -2,15 +2,15 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import "@mantine/carousel/styles.css";
 import { Image } from "@mantine/core";
-import Img01 from "/Image01.png";
-import Img02 from "/image 02.png";
-import Img03 from "/Image03.png";
+import Img01 from "/1.jpg";
+import Img02 from "/2.jpg";
+import Img03 from "/3.jpg";
 import { useRef } from "react";
 
 const images = [
-  "/img/img01.png",
-  "/img/img02.png",
-  "/img/img03.png",
+  "/5.jpg",
+  "/1.jpg",
+  "/4.jpg",
   "/img/img04.png",
 ];
 
@@ -51,7 +51,7 @@ function Home() {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   const slides = images.map((url) => (
     <Carousel.Slide key={url}>
-      <Image src={url} className="object-cover w-full h-full rounded-md" />
+      <Image src={url} className="w-full h-[500px] rounded-md" />
     </Carousel.Slide>
   ));
 
@@ -86,7 +86,7 @@ function Home() {
             />
           </div>
           <div className="bg-white p-4 shadow">
-            <h2 className="text-xl font-bold mb-2">About ANT Eco Builders</h2>
+            <h2 className="text-xl font-bold mb-2">About ANT ECO BUILDERS</h2>
             <p className="text-sm mb-2">
               Welcome to ANT ECO BUILDERS, a pioneering brick company based in
               the UK, founded with a shared vision for a sustainable future. Our
@@ -204,27 +204,35 @@ function Home() {
       <hr className="border-black my-8 " />
       <div className="bg-white py-8 px-4 sm:px-8">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-2xl font-bold mb-6">How can we help?</h2>
+          <h2 className="text-2xl font-bold mb-6">Explore Our Library</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
               <h3 className="text-lg font-semibold mb-2">
-                Are Construction Material Shortages Here to Stay?
+              What is AAC Block
+?
               </h3>
               <span className="flex flex-col">
                 <p className="text-sm mb-4 flex text-justify">
-                  The UK is currently experiencing a significant shortage of
-                  essential construction materials such as bricks, steel,
-                  adhesives, paints, and timber. While larger construction
-                  companies have managed to navigate these challenges, smaller
-                  businesses are struggling to keep up.
+                Autoclaved Aerated Concrete (AAC) Blocks are a versatile and innovative building material that has revolutionized construction techniques around the world. Originating in Sweden in the 1920s, AAC blocks are known for their superior properties, including light weight, high strength, and excellent thermal insulation.
+                </p>
+                
+              </span>
+              <div className="flex justify-between items-center">
+                <hr className="border-black w-full" />
+                <span className="ml-2 cursor-pointer">⌄</span>
+              </div>
+            </div>
+            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
+              <h3 className="text-lg font-semibold mb-2">
+              History of AAC Blocks
+              </h3>
+              <span className="flex flex-col">
+                <p className="text-sm mb-4 flex text-justify">
+                Autoclaved Aerated Concrete (AAC) Blocks have a rich history that dates back to the early 20th century. Developed to address the need for a lightweight, durable, and insulating building material, AAC blocks have evolved significantly since their inception.
+
                 </p>
                 <p className="text-sm mb-4 flex text-justify">
-                  Despite the recent trade deal between the UK and the EU, which
-                  addresses some issues, it fails to tackle one of the most
-                  pressing concerns for construction companies: the new UK
-                  Conformity Assessed (UKCA) certification. As of January 1,
-                  2022, all European products used in UK construction must be
-                  UKCA certified.
+                The history of AAC blocks is a testament to human ingenuity and the quest for better building materials. From its humble beginnings in Sweden to its current status as a global construction staple, AAC has proven to be an invaluable resource in modern architecture and engineering
                 </p>
               </span>
               <div className="flex justify-between items-center">
@@ -234,52 +242,16 @@ function Home() {
             </div>
             <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
               <h3 className="text-lg font-semibold mb-2">
-                The Importance of Choosing the Right Brick: Insights from UK ANT
-                CPD Accredited Programme
+              Advantages of AAC Blocks
+
               </h3>
               <span className="flex flex-col">
                 <p className="text-sm mb-4 flex text-justify">
-                  In the world of architecture, not all bricks are created
-                  equal. UK ANT CPD-accredited course, "Designing with Brick,"
-                  highlights the crucial role that brick selection plays in
-                  architectural design. Architects are often faced with a vast
-                  array of brick types, each offering unique qualities that can
-                  dramatically influence a project’s success.
+                Autoclaved Aerated Concrete (AAC) Blocks offer a multitude of benefits, making them a preferred choice in modern construction.
                 </p>
                 <p className="text-sm mb-4 flex text-justify">
-                  From aesthetic appeal to durability, thermal insulation, and
-                  load-bearing capabilities, bricks vary widely in their
-                  characteristics. This diversity makes it essential for
-                  architects to carefully consider the specific needs of each
-                  project. The right brick can enhance not only the structural
-                  integrity of a building but also its overall visual appeal.
-                </p>
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-                Navigating the Building Material Shortage: Challenges and
-                Insights
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                  The construction industry is facing a significant challenge as
-                  a major shortage of building materials is causing delays and
-                  budget concerns across the board. For many, this has become a
-                  serious obstacle, especially for those working within tight
-                  timelines and budgets.
-                </p>
-                <p className="text-sm mb-4 flex text-justify">
-                  The shortage has had a direct impact on the availability and
-                  cost of materials such as bricks. The Construction Products
-                  Association (CPA) predicted a rise in construction output by
-                  12.9% this year and 5.2% next year. However, these optimistic
-                  forecasts are now under threat as the demand for materials far
-                  exceeds supply.
+                By incorporating AAC blocks into your building projects, you can achieve a balance of performance, sustainability, and cost-efficiency. Their unique properties not only enhance the structural integrity and comfort of buildings but also contribute to a more sustainable and environmentally friendly construction practice. Whether for residential, commercial, or industrial applications, AAC blocks represent a smart and innovative choice for modern builders and developers.
+
                 </p>
               </span>
               <div className="flex justify-between items-center">

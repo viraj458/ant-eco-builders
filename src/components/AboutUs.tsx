@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
     <div className="space-y-6 max-w-[1600px] mx-auto">
       <div className="bg-gray-300 h-96 flex items-center justify-center">
         <img
-          src="/aboutImg01.jpg"
+          src="/img2.png"
           alt="Banner"
           className="w-full h-full border-2 border-black rounded-md opacity-50"
         />

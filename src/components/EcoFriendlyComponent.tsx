@@ -2,7 +2,7 @@ import React from "react";
 import { FiDownload } from "react-icons/fi";
 import { PieChart } from '@mantine/charts';
 import PImage1 from "/src/assets/pimage1.jpg"
-import Pmage2 from "/3.jpg"
+import Pmage2 from "/img7.png"
 
 
 const EcoFriendlyComponent: React.FC = () => {
@@ -79,17 +79,17 @@ const EcoFriendlyComponent: React.FC = () => {
           <p>There is a chart here...</p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between mb-4">
+      {/* <div className="flex flex-col md:flex-row justify-between mb-4">
         <div className="w-full md:w-1/3 bg-gray-200  flex items-center justify-center mb-4 md:mb-0">
-          <img src="/1.jpg" alt="Picture 01" className="h-full w-full object-cover" />
+          <img src="/img4.png" alt="Picture 01" className="h-full w-full object-cover" />
         </div>
         <div className="w-full md:w-1/3 bg-gray-200  flex items-center justify-center mb-4 md:mb-0 md:mx-2">
-          <img src="/5.jpg" alt="Picture 02" className="h-full w-full object-cover" />
+          <img src="/img5.png" alt="Picture 02" className="h-full w-full object-cover" />
         </div>
         <div className="w-full md:w-1/3 bg-gray-200  flex items-center justify-center">
-          <img src="/6.jpg" alt="Picture 03" className="h-full w-full object-cover" />
+          <img src="/img6.png" alt="Picture 03" className="h-full w-full object-cover" />
         </div>
-      </div>
+      </div> */}
       <div className="mb-4">
         <h3 className="text-lg font-bold mb-2 text-center">Technical Specifications</h3>
         <div className="h-24 bg-gray-300 flex items-center justify-center">

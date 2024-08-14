@@ -6,13 +6,9 @@ import Img01 from "/img4.png";
 import Img02 from "/img3.jpg";
 import Img03 from "/img9.png";
 import { useRef } from "react";
+import LibraryInfoCard from "../LibraryInfoCard";
 
-const images = [
-  "/img5.png",
-  "/img4.png",
-  "/img8.png",
-  "/img/img04.png",
-];
+const images = ["/img5.png", "/img4.png", "/img8.png", "/img/img04.png"];
 
 // const data = [
 //   {
@@ -112,6 +108,8 @@ function Home() {
               About
             </button>
           </div>
+
+          
           <div className="bg-white p-4 shadow">
             <h2 className="text-xl font-bold mb-2">
               Why Choose ANT ACC Blocks?
@@ -205,61 +203,22 @@ function Home() {
       <div className="bg-white py-8 px-4 sm:px-8">
         <div className="max-w-[1600px] mx-auto">
           <h2 className="text-2xl font-bold mb-6">Explore Our Library</h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-              What is AAC Block
-?
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                Autoclaved Aerated Concrete (AAC) Blocks are a versatile and innovative building material that has revolutionized construction techniques around the world. Originating in Sweden in the 1920s, AAC blocks are known for their superior properties, including light weight, high strength, and excellent thermal insulation.
-                </p>
-                
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-              History of AAC Blocks
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                Autoclaved Aerated Concrete (AAC) Blocks have a rich history that dates back to the early 20th century. Developed to address the need for a lightweight, durable, and insulating building material, AAC blocks have evolved significantly since their inception.
-
-                </p>
-                <p className="text-sm mb-4 flex text-justify">
-                The history of AAC blocks is a testament to human ingenuity and the quest for better building materials. From its humble beginnings in Sweden to its current status as a global construction staple, AAC has proven to be an invaluable resource in modern architecture and engineering
-                </p>
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-              Advantages of AAC Blocks
-
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                Autoclaved Aerated Concrete (AAC) Blocks offer a multitude of benefits, making them a preferred choice in modern construction.
-                </p>
-                <p className="text-sm mb-4 flex text-justify">
-                By incorporating AAC blocks into your building projects, you can achieve a balance of performance, sustainability, and cost-efficiency. Their unique properties not only enhance the structural integrity and comfort of buildings but also contribute to a more sustainable and environmentally friendly construction practice. Whether for residential, commercial, or industrial applications, AAC blocks represent a smart and innovative choice for modern builders and developers.
-
-                </p>
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
+            <LibraryInfoCard
+              title="What is AAC Block?"
+              description="Autoclaved Aerated Concrete (AAC) Blocks are a versatile and innovative building material that has revolutionized construction techniques around the world. Originating in Sweden in the 1920s, AAC blocks are known for their superior properties, including light weight, high strength, and excellent thermal insulation."
+            />
+            <LibraryInfoCard
+              title="History of AAC Blocks"
+              description="Autoclaved Aerated Concrete (AAC) Blocks have a rich history that dates back to the early 20th century. Developed to address the need for a lightweight, durable, and insulating building material, AAC blocks have evolved significantly since their inception."
+            />
+            <LibraryInfoCard
+              title="Advantages of AAC Blocks"
+              description="Autoclaved Aerated Concrete (AAC) Blocks offer a multitude of benefits, making them a preferred choice in modern construction. By incorporating AAC blocks into your building projects, you can achieve a balance of performance, sustainability, and cost-efficiency."
+            />
           </div>
+
           <div className="bg-gray-500 text-white py-8 px-4 rounded shadow-lg flex flex-col md:flex-row justify-between items-center">
             <div className="text-lg font-semibold mb-4 md:mb-0">
               Feel Free to contact usz

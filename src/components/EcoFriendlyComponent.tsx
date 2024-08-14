@@ -30,9 +30,9 @@ const EcoFriendlyComponent: React.FC = () => {
         <img src={PImage1} alt="Eco-friendly shows in green theme" className="h-full w-full" />
         <span className="absolute">
           <div className="flex flex-col justify-center items-center">
-            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">the world's best aac</p> 
-            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">blocks</p>
-            <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">Bring your home closer to nature</p>
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">the world's best aac</p> 
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">blocks</p>
+            <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md cursor-pointer">Bring your home closer to nature</p>
           </div>
         </span>
       </div>

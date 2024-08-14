@@ -76,13 +76,13 @@ const ServicesPage: React.FC = () => {
           />
           <span className="absolute">
             <div className="flex flex-col justify-center items-center">
-              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer">
                 service for our aac
               </p>
-              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">
                 blocks
               </p>
-              <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">
+              <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md cursor-pointer">
                 Make your way easier
               </p>
             </div>

@@ -26,12 +26,12 @@ const EcoFriendlyComponent: React.FC = () => {
 
   return (
     <div className="bg-gray-100 max-w-[1600px] mx-auto">
-      <div className="bg-green-500 h-[150px] sm:h-auto flex items-center justify-center mb-4">
-        <img src={PImage1} alt="Eco-friendly shows in green theme" className="h-full w-full" />
+      <div className="bg-green-500 h-[250px] sm:h-auto flex items-center justify-center mb-4 ">
+        <img src={PImage1} alt="Eco-friendly shows in green theme" className="h-full w-full brightness-[0.4]" />
         <span className="absolute">
           <div className="flex flex-col justify-center items-center">
-            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">the world's best aac</p> 
-            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">blocks</p>
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer text-white">the world's best aac</p> 
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer text-white">blocks</p>
             <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md cursor-pointer">Bring your home closer to nature</p>
           </div>
         </span>

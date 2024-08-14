@@ -16,6 +16,13 @@ const AboutUs: React.FC = () => {
           alt="Banner"
           className="w-full h-full border-2 border-black rounded-md opacity-50"
         />
+         <span className="absolute">
+          <div className="flex flex-col justify-center items-center">
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">About ant acc</p> 
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">blocks</p>
+            <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">Here's little bit of our company</p>
+          </div>
+        </span>
       </div>
       <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
         <div className="bg-gray-300 w-full lg:w-1/3 flex items-center justify-center">
@@ -27,7 +34,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="flex-1 flex flex-col space-y-6">
           <div className="p-4 space-y-2">
-            <h2 className="font-bold text-lg">Who we are</h2>
+            {/* <h2 className="font-bold text-lg">Who we are</h2> */}
             <hr className="border-black" />
             <p className="text-sm">
               Welcome to ANT ECO BUILDERS, a leader in innovative construction
@@ -70,14 +77,14 @@ const AboutUs: React.FC = () => {
             <h2 className="font-bold text-lg">Why Choose Us</h2>
             <hr className="border-black" />
             <p className="text-sm">
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; Sed at nulla lorem. Sed at est eget urna
-              ultricies aliquet. Mauris lacinia, nisl id feugiat bibendum, erat
-              nisl sodales enim, id molestie metus risus id nulla. Aliquam erat
-              volutpat. Morbi suscipit purus sed sollicitudin feugiat.
+            At ANT ECO BUILDERS, we provide unparalleled construction solutions with a focus on quality, innovation, and sustainability. Our team brings years of industry experience and expertise to every project, ensuring that we meet and exceed expectations.
+
             </p>
             <p className="text-sm">
             We use advanced materials like Autoclaved Aerated Concrete (AAC) blocks for modern, efficient building solutions. We prioritize eco-friendly practices to reduce our carbon footprint and promote sustainable development. Our customer-centric approach ensures that we deliver customized solutions tailored to your needs. From concept to completion, we offer comprehensive, cost-effective services for residential, commercial, and industrial projects.
+            </p>
+            <p className="text-sm">
+            Choose ANT ECO BUILDERS for excellence, innovation, and sustainability.
             </p>
           </div>
         </div>

@@ -5,12 +5,7 @@ Chart.register(...registerables);
 
 const ServicesPage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    "/img4.png",
-    "/img5.png",
-    "/img6.png",
-    "/img1.png",
-  ];
+  const slides = ["/img4.png", "/img5.png", "/img6.png", "/img1.png"];
 
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -79,13 +74,19 @@ const ServicesPage: React.FC = () => {
             className="object-cover w-full h-full transition-opacity duration-1000 ease-in-out"
             style={{ opacity: 1 }}
           />
-           <span className="absolute">
-         <div className="flex flex-col justify-center items-center">
-         <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">service for our aac</p> 
-         <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">blocks</p>
-         <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">Make your way easier</p>
-         </div>
-        </span>
+          <span className="absolute">
+            <div className="flex flex-col justify-center items-center">
+              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+                service for our aac
+              </p>
+              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+                blocks
+              </p>
+              <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">
+                Make your way easier
+              </p>
+            </div>
+          </span>
           <button
             onClick={handlePrevSlide}
             className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full flex items-center justify-center"
@@ -124,7 +125,6 @@ const ServicesPage: React.FC = () => {
               />
             </svg>
           </button>
-          
         </div>
         <div className="flex justify-center mt-4">
           {slides.map((_, index) => (

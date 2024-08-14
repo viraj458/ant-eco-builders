@@ -4,44 +4,12 @@ import "@mantine/carousel/styles.css";
 import { Image } from "@mantine/core";
 import Img01 from "/img4.png";
 import Img02 from "/img3.jpg";
-import Img03 from "/img9.png";
+// import Img03 from "/img9.png";
+import Img99 from "/img99.png";
 import { useRef } from "react";
 import LibraryInfoCard from "../LibraryInfoCard";
 
 const images = ["/img5.png", "/img4.png", "/img8.png", "/img/img04.png"];
-
-// const data = [
-//   {
-//     date: "Mar 22",
-//     Apples: 2890,
-//     Oranges: 2338,
-//     Tomatoes: 2452,
-//   },
-//   {
-//     date: "Mar 23",
-//     Apples: 2756,
-//     Oranges: 2103,
-//     Tomatoes: 2402,
-//   },
-//   {
-//     date: "Mar 24",
-//     Apples: 3322,
-//     Oranges: 986,
-//     Tomatoes: 1821,
-//   },
-//   {
-//     date: "Mar 25",
-//     Apples: 3470,
-//     Oranges: 2108,
-//     Tomatoes: 2809,
-//   },
-//   {
-//     date: "Mar 26",
-//     Apples: 3129,
-//     Oranges: 1726,
-//     Tomatoes: 2290,
-//   },
-// ];
 
 function Home() {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
@@ -53,23 +21,41 @@ function Home() {
 
   return (
     <div className="max-w-[1600px] mx-auto">
-      <Carousel
-        withIndicators
-        plugins={[autoplay.current]}
-        onMouseEnter={autoplay.current.stop}
-        onMouseLeave={autoplay.current.reset}
-        loop
-        styles={{
-          indicator: {
-            backgroundColor: "#000",
-            "&[data-active]": {
-              backgroundColor: "#007BFF",
+      <div className="relative">
+        {/* Carousel */}
+        <Carousel
+          withIndicators
+          plugins={[autoplay.current]}
+          onMouseEnter={autoplay.current.stop}
+          onMouseLeave={autoplay.current.reset}
+          loop
+          styles={{
+            indicator: {
+              backgroundColor: "#000",
+              "&[data-active]": {
+                backgroundColor: "#007BFF",
+              },
             },
-          },
-        }}
-      >
-        {slides}
-      </Carousel>
+          }}
+        >
+          {slides}
+        </Carousel>
+
+        {/* Overlay Text */}
+        <span className="absolute inset-0 flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center">
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+              the uk's leading acc
+            </p>
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+              Block supplier
+            </p>
+            <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md">
+              Build your dream structure with us
+            </p>
+          </div>
+        </span>
+      </div>
 
       <hr className="border-black my-8" />
       <div className="mt-10">
@@ -109,7 +95,6 @@ function Home() {
             </button>
           </div>
 
-          
           <div className="bg-white p-4 shadow">
             <h2 className="text-xl font-bold mb-2">
               Why Choose ANT ACC Blocks?
@@ -144,23 +129,15 @@ function Home() {
               Products
             </button>
           </div>
-          {/* <div className="bg-slate-200 shadow-md ">
-                        <LineChart
-                            className='p-5'
-                            h={300}
-                            data={data}
-                            dataKey="date"
-                            series={[
-                                { name: 'Apples', color: 'indigo.6' },
-                                { name: 'Oranges', color: 'blue.6' },
-                                { name: 'Tomatoes', color: 'teal.6' },
-                            ]}
-                            curveType="linear"
-                        />
-                    </div> */}
+
           <div className="bg-gray-300  flex items-center justify-center overflow-hidden">
-            <img
+            {/* <img
               src={Img03}
+              className="object-cover w-full h-full rounded-md"
+              alt="Decorative"
+            /> */}
+            <img
+              src={Img99}
               className="object-cover w-full h-full rounded-md"
               alt="Decorative"
             />

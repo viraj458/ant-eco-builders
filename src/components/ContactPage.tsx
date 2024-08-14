@@ -70,8 +70,8 @@ const ContactPage: React.FC = () => {
     <div className="flex flex-col items-center justify-center w-full px-4">
       <div className="container max-w-[1600px] mx-auto">
         <div className="bg-gray-300 p-7 text-center w-full flex flex-col items-center justify-center rounded-xl">
-          <h1 className="text-4xl font-bold py-4">Contact Us</h1>
-
+          <h1 className="text-4xl font-bold py-4 uppercase">Contact Us</h1>
+          <h3 className="text-xl sm:text-2xl  py-3 max-w-[400px] font-semibold">For a quote or general information, fill out the from below</h3>
           <div className="flex flex-col space-y-2 ">
             <span className="flex items-center space-x-10 justify-between">
               <p>

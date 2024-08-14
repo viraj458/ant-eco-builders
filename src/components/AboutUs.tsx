@@ -14,12 +14,12 @@ const AboutUs: React.FC = () => {
         <img
           src="/img2.png"
           alt="Banner"
-          className="w-full h-full border-2 border-black rounded-md opacity-50"
+          className="w-full h-full border-2 border-black rounded-md brightness-[0.4]"
         />
          <span className="absolute">
           <div className="flex flex-col justify-center items-center">
-            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer">About ant acc</p> 
-            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer">blocks</p>
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer text-white">About ant acc</p> 
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer text-white">blocks</p>
             <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md cursor-pointer">Here's little bit of our company</p>
           </div>
         </span>

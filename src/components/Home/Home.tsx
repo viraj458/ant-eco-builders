@@ -4,48 +4,12 @@ import "@mantine/carousel/styles.css";
 import { Image } from "@mantine/core";
 import Img01 from "/img4.png";
 import Img02 from "/img3.jpg";
-import Img03 from "/img9.png";
+// import Img03 from "/img9.png";
+import Img99 from "/img99.png";
 import { useRef } from "react";
+import LibraryInfoCard from "../LibraryInfoCard";
 
-const images = [
-  "/img5.png",
-  "/img4.png",
-  "/img8.png",
-  "/img/img04.png",
-];
-
-// const data = [
-//   {
-//     date: "Mar 22",
-//     Apples: 2890,
-//     Oranges: 2338,
-//     Tomatoes: 2452,
-//   },
-//   {
-//     date: "Mar 23",
-//     Apples: 2756,
-//     Oranges: 2103,
-//     Tomatoes: 2402,
-//   },
-//   {
-//     date: "Mar 24",
-//     Apples: 3322,
-//     Oranges: 986,
-//     Tomatoes: 1821,
-//   },
-//   {
-//     date: "Mar 25",
-//     Apples: 3470,
-//     Oranges: 2108,
-//     Tomatoes: 2809,
-//   },
-//   {
-//     date: "Mar 26",
-//     Apples: 3129,
-//     Oranges: 1726,
-//     Tomatoes: 2290,
-//   },
-// ];
+const images = ["/img5.png", "/img4.png", "/img8.png", "/img/img04.png"];
 
 function Home() {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
@@ -57,23 +21,41 @@ function Home() {
 
   return (
     <div className="max-w-[1600px] mx-auto">
-      <Carousel
-        withIndicators
-        plugins={[autoplay.current]}
-        onMouseEnter={autoplay.current.stop}
-        onMouseLeave={autoplay.current.reset}
-        loop
-        styles={{
-          indicator: {
-            backgroundColor: "#000",
-            "&[data-active]": {
-              backgroundColor: "#007BFF",
+      <div className="relative">
+        {/* Carousel */}
+        <Carousel
+          withIndicators
+          plugins={[autoplay.current]}
+          onMouseEnter={autoplay.current.stop}
+          onMouseLeave={autoplay.current.reset}
+          loop
+          styles={{
+            indicator: {
+              backgroundColor: "#000",
+              "&[data-active]": {
+                backgroundColor: "#007BFF",
+              },
             },
-          },
-        }}
-      >
-        {slides}
-      </Carousel>
+          }}
+        >
+          {slides}
+        </Carousel>
+
+        {/* Overlay Text */}
+        <span className="absolute inset-0 flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center">
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">
+              the uk's leading acc
+            </p>
+            <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold">
+              Block supplier
+            </p>
+            <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md cursor-pointer">
+              Build your dream structure with us
+            </p>
+          </div>
+        </span>
+      </div>
 
       <hr className="border-black my-8" />
       <div className="mt-10">
@@ -112,6 +94,7 @@ function Home() {
               About
             </button>
           </div>
+
           <div className="bg-white p-4 shadow">
             <h2 className="text-xl font-bold mb-2">
               Why Choose ANT ACC Blocks?
@@ -146,23 +129,15 @@ function Home() {
               Products
             </button>
           </div>
-          {/* <div className="bg-slate-200 shadow-md ">
-                        <LineChart
-                            className='p-5'
-                            h={300}
-                            data={data}
-                            dataKey="date"
-                            series={[
-                                { name: 'Apples', color: 'indigo.6' },
-                                { name: 'Oranges', color: 'blue.6' },
-                                { name: 'Tomatoes', color: 'teal.6' },
-                            ]}
-                            curveType="linear"
-                        />
-                    </div> */}
+
           <div className="bg-gray-300  flex items-center justify-center overflow-hidden">
-            <img
+            {/* <img
               src={Img03}
+              className="object-cover w-full h-full rounded-md"
+              alt="Decorative"
+            /> */}
+            <img
+              src={Img99}
               className="object-cover w-full h-full rounded-md"
               alt="Decorative"
             />
@@ -205,61 +180,22 @@ function Home() {
       <div className="bg-white py-8 px-4 sm:px-8">
         <div className="max-w-[1600px] mx-auto">
           <h2 className="text-2xl font-bold mb-6">Explore Our Library</h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-              What is AAC Block
-?
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                Autoclaved Aerated Concrete (AAC) Blocks are a versatile and innovative building material that has revolutionized construction techniques around the world. Originating in Sweden in the 1920s, AAC blocks are known for their superior properties, including light weight, high strength, and excellent thermal insulation.
-                </p>
-                
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-              History of AAC Blocks
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                Autoclaved Aerated Concrete (AAC) Blocks have a rich history that dates back to the early 20th century. Developed to address the need for a lightweight, durable, and insulating building material, AAC blocks have evolved significantly since their inception.
-
-                </p>
-                <p className="text-sm mb-4 flex text-justify">
-                The history of AAC blocks is a testament to human ingenuity and the quest for better building materials. From its humble beginnings in Sweden to its current status as a global construction staple, AAC has proven to be an invaluable resource in modern architecture and engineering
-                </p>
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
-            <div className="bg-gray-300 p-4 rounded shadow hover:bg-gray-400 transition-all cursor-pointer bg-img text-white">
-              <h3 className="text-lg font-semibold mb-2">
-              Advantages of AAC Blocks
-
-              </h3>
-              <span className="flex flex-col">
-                <p className="text-sm mb-4 flex text-justify">
-                Autoclaved Aerated Concrete (AAC) Blocks offer a multitude of benefits, making them a preferred choice in modern construction.
-                </p>
-                <p className="text-sm mb-4 flex text-justify">
-                By incorporating AAC blocks into your building projects, you can achieve a balance of performance, sustainability, and cost-efficiency. Their unique properties not only enhance the structural integrity and comfort of buildings but also contribute to a more sustainable and environmentally friendly construction practice. Whether for residential, commercial, or industrial applications, AAC blocks represent a smart and innovative choice for modern builders and developers.
-
-                </p>
-              </span>
-              <div className="flex justify-between items-center">
-                <hr className="border-black w-full" />
-                <span className="ml-2 cursor-pointer">⌄</span>
-              </div>
-            </div>
+            <LibraryInfoCard
+              title="What is AAC Block?"
+              description="Autoclaved Aerated Concrete (AAC) Blocks are a versatile and innovative building material that has revolutionized construction techniques around the world. Originating in Sweden in the 1920s, AAC blocks are known for their superior properties, including light weight, high strength, and excellent thermal insulation."
+            />
+            <LibraryInfoCard
+              title="History of AAC Blocks"
+              description="Autoclaved Aerated Concrete (AAC) Blocks have a rich history that dates back to the early 20th century. Developed to address the need for a lightweight, durable, and insulating building material, AAC blocks have evolved significantly since their inception."
+            />
+            <LibraryInfoCard
+              title="Advantages of AAC Blocks"
+              description="Autoclaved Aerated Concrete (AAC) Blocks offer a multitude of benefits, making them a preferred choice in modern construction. By incorporating AAC blocks into your building projects, you can achieve a balance of performance, sustainability, and cost-efficiency."
+            />
           </div>
+
           <div className="bg-gray-500 text-white py-8 px-4 rounded shadow-lg flex flex-col md:flex-row justify-between items-center">
             <div className="text-lg font-semibold mb-4 md:mb-0">
               Feel Free to contact usz

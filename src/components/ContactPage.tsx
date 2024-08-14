@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
-import Pmage2 from "/img8.png";
+// import { FaPhoneAlt } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
+// import { FaLocationDot } from "react-icons/fa6";
+// import Pmage2 from "/img8.png";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({

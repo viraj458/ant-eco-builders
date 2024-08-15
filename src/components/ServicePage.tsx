@@ -71,15 +71,15 @@ const ServicesPage: React.FC = () => {
           <img
             src={slides[currentSlide]}
             alt={`Slide ${currentSlide + 1}`}
-            className="object-cover w-full h-full transition-opacity duration-1000 ease-in-out"
+            className="object-cover w-full h-full transition-opacity duration-1000 ease-in-out brightness-[0.4]"
             style={{ opacity: 1 }}
           />
           <span className="absolute">
             <div className="flex flex-col justify-center items-center">
-              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer">
+              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold  cursor-pointer text-white">
                 service for our aac
               </p>
-              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer">
+              <p className="uppercase text-xl sm:text-3xl lg:text-6xl font-semibold cursor-pointer text-white">
                 blocks
               </p>
               <p className="bg-black text-base lg:text-2xl text-white p-2 px-3 mt-5 rounded-md cursor-pointer">

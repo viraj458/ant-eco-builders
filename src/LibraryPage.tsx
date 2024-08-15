@@ -4,12 +4,12 @@ import Img02 from "/Libry2.png";
 const LibraryPage = () => {
   return (
 
-    <div className="flex flex-col w-full">
-      <div className=" md:h-[500px] flex items-center justify-center mb-8">
+    <div className="flex flex-col w-full container max-w-[1600px] mx-auto">
+      <div className=" md:h-[450px] flex items-center justify-center mb-8">
         <img
           src="/LibryBg.jpg"
           alt="Banner"
-          className="w-full h-full border-2 border-black rounded-md opacity-50"
+          className="w-full h-full border-2 border-black rounded-md brightness-[0.4]"
         />
       </div>
       <div className="bg-white p-4 shadow flex flex-col justify-center rounded-lg">

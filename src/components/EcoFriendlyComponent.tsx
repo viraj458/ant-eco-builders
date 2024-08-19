@@ -3,6 +3,11 @@ import { FiDownload } from "react-icons/fi";
 import { PieChart } from '@mantine/charts';
 import PImage1 from "/src/assets/pimage1.jpg";
 import Pmage2 from "/img7.png";
+import { Table } from "./@/components/ui/table";
+import { ProductTable01 } from "./Tables/ProductTable01";
+import { ProductTable02 } from "./Tables/ProductTable02";
+import { ProductTable03 } from "./Tables/ProductTable03";
+
 
 const EcoFriendlyComponent: React.FC = () => {
   const data = [
@@ -89,30 +94,28 @@ const EcoFriendlyComponent: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mb-4">
-        <h3 className="text-lg font-bold mb-2 text-center">Standard Block Sizes</h3>
-        <div className="h-24 bg-gray-300 flex items-center justify-center mb-4">
-          <p>There is a chart here...</p>
+      <div className="mb-4 sm:mb-8">
+        <h3 className="text-xl md:text-2xl font-bold mb-2 text-center">Standard Block Sizes</h3>
+        <div className=" bg-gray-300 flex items-center justify-center mb-4">
+        <ProductTable01/>
         </div>
       </div>
-      <div className="mb-4">
-        <h3 className="text-lg font-bold mb-2 text-center">Technical Specifications</h3>
-        <div className="h-24 bg-gray-300 flex items-center justify-center">
-          <p>There is a chart here...</p>
+      <div className="mb-4 sm:mb-8">
+        <h3 className="text-xl md:text-2xl font-bold mb-2 text-center">Technical Specifications</h3>
+        <div className="bg-gray-300 flex items-center justify-center ">
+        <ProductTable02/>
+          
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-bold mb-2 text-center">
+        <h3 className="text-xl md:text-2xl font-bold mb-2 text-center">
           Item comparison with ANT AAC Block
         </h3>
         <div className="border-t border-dashed border-gray-400 pt-2">
-          {data && data.length > 0 ? (
-            <PieChart
-              data={data}
-            />
-          ) : (
-            <p>No data available</p>
-          )}
+        <div className="bg-gray-300 flex items-center justify-center ">
+        <ProductTable03/>
+          
+        </div>
         </div>
       </div>
     </div>

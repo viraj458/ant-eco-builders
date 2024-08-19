@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Chart, registerables } from "chart.js";
+import  ServiceTable01  from "./Tables/ServiceTable01";
+import ServiceTable02 from "./Tables/ServiceTable02";
 
 Chart.register(...registerables);
 
@@ -154,8 +156,8 @@ const ServicesPage: React.FC = () => {
             tortor condimentum euismod.
           </p>
           <div className="border-b-2 border-dashed mb-4" />
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <canvas id="chart1" className="w-full h-full" />
+          <div className="bg-gray-300  flex items-center justify-center">
+          <ServiceTable01/>
           </div>
         </div>
       </div>
@@ -175,8 +177,8 @@ const ServicesPage: React.FC = () => {
             tincidunt cursus.
           </p>
           <div className="border-b-2 border-dashed mb-4" />
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <canvas id="chart2" className="w-full h-full" />
+          <div className="bg-gray-300  flex items-center justify-center">
+          <ServiceTable02/>
           </div>
         </div>
       </div>

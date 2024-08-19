@@ -23,8 +23,8 @@ function Footer() {
                         <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                         <ul className="text-sm space-y-2">
                             <li>Phone: (123) 456-7890</li>
-                            <li>Email: info@ecobuilders.com</li>
-                            <li>Address: 123 Eco St, Green City, GA</li>
+                            <li>Email: info@antecobuilders.com</li>
+                            <li>Address: 12 Lower Cambridge Street,Loughborough,LE11 1PH</li>
                         </ul>
                     </div>
                 </div>

@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import { PieChart } from '@mantine/charts';
 import PImage1 from "/src/assets/pimage1.jpg";
 import Pmage2 from "/img7.png";
-import { Table } from "./@/components/ui/table";
 import { ProductTable01 } from "./Tables/ProductTable01";
 import { ProductTable02 } from "./Tables/ProductTable02";
 import { ProductTable03 } from "./Tables/ProductTable03";
 
 
 const EcoFriendlyComponent: React.FC = () => {
-  const data = [
-    { name: 'Traditional Bricks', value: 60, color: 'red' },
-    { name: 'Concrete Blocks', value: 25, color: 'orange' },
-    { name: 'ANT AAC Block', value: 15, color: 'green' },
-  ];
+  // const data = [
+  //   { name: 'Traditional Bricks', value: 60, color: 'red' },
+  //   { name: 'Concrete Blocks', value: 25, color: 'orange' },
+  //   { name: 'ANT AAC Block', value: 15, color: 'green' },
+  // ];
 
   const descriptions: { [key: string]: string } = {
     "Eco-friendly": "The production of AAC blocks typically involves less energy and raw materials compared to traditional concrete blocks. Additionally, they are often made from recycled materials and are recyclable themselves, contributing to sustainability.",

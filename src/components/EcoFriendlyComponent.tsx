@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import PImage1 from "/src/assets/pimage1.jpg";
-import Pmage2 from "/img7.png";
+import Pmage2 from "/img7.webp";
 import { ProductTable01 } from "./Tables/ProductTable01";
 import { ProductTable02 } from "./Tables/ProductTable02";
 import { ProductTable03 } from "./Tables/ProductTable03";

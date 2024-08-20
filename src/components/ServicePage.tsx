@@ -7,7 +7,7 @@ Chart.register(...registerables);
 
 const ServicesPage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = ["/img4.png", "/img5.png", "/img6.png", "/img1.png"];
+  const slides = ["/img4.webp", "/img5.webp", "/img6.png", "/img1.webp"];
 
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -164,7 +164,7 @@ const ServicesPage: React.FC = () => {
       <div className="flex flex-col lg:flex-row-reverse gap-8 mb-8">
         <div className="bg-gray-300 flex-none h-48 lg:h-auto lg:w-1/3">
           <img
-            src="/img4.png"
+            src="/img4.webp"
             alt="Packing and Loading"
             className="object-cover w-full h-full"
           />

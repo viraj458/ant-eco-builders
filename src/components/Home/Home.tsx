@@ -2,14 +2,14 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import "@mantine/carousel/styles.css";
 import { Image } from "@mantine/core";
-import Img01 from "/img4.png";
-import Img02 from "/img3.jpg";
+import Img01 from "/img4.webp";
+import Img02 from "/img3.webp";
 // import Img03 from "/img9.png";
 import Img99 from "/img99.png";
 import { useRef } from "react";
 import LibraryInfoCard from "../LibraryInfoCard";
 
-const images = ["/img5.png", "/img4.png", "/img8.png", "/img/img04.png"];
+const images = ["/img5.webp", "/img4.webp", "/img8.webp", "/img04.webp"];
 
 function Home() {
   const autoplay = useRef(Autoplay({ delay: 2000 }));

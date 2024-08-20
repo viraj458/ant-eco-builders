@@ -1,5 +1,5 @@
-import Img01 from "/Libry1.png";
-import Img02 from "/Libry2.png";
+import Img01 from "/Libry1.webp";
+import Img02 from "/Libry2.webp";
 
 const LibraryPage = () => {
   return (

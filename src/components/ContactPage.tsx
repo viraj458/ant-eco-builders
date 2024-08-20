@@ -104,7 +104,7 @@ const ContactPage: React.FC = () => {
 
         <div className="bg-gray-300  flex items-center justify-center ">
           <img
-            src="/Conatctus.png"
+            src="/Conatctus.webp"
             alt="Banner"
             className="w-full h-[260px] md:h-[450px] border-2 border-black rounded-md brightness-[0.4] text-white"
           />
